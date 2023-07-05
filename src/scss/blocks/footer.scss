@@ -1,0 +1,26 @@
+
+.footer {
+  padding-top: 47px;
+  padding-bottom: 47px;
+
+  .section__title {
+    text-transform: initial;
+    margin-bottom: 40px;
+  }
+
+  // .footer__address
+  &__address {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  // .footer__contact
+  &__contact {
+    text-align: center;
+
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.timetable {
+  padding-top: 95px;
+  padding-bottom: 120px;
+  // .timetable__title
+  &__title {
+  }
+
+  // .timetable__inner
+  &__inner {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .timetable__item
+  &__item {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .timetable__time
+  &__time {
+    color: $gold;
+    margin-bottom: 15px;
+    font-family: "Frutiger Neue LT W1G", sans-serif;
+  }
+
+  // .timetable__content
+  &__content {
+    text-align: center;
+  }
+}

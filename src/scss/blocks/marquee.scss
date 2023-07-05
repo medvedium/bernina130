@@ -1,0 +1,15 @@
+.marquee {
+  display: flex;
+  //grid-template-columns:  );
+  column-gap: 46px;
+
+  // .marquee__wrap
+  &__wrap {
+    padding: 16px 0 10px;
+  }
+
+  span {
+    font-size: 15px;
+    opacity: .5;
+  }
+}

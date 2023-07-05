@@ -1,0 +1,43 @@
+
+.master-class {
+  padding-top: 116px;
+  padding-bottom: 112px;
+
+  // .master-class__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 51px;
+    margin-top: 36px;
+  }
+
+  // .master-class__item
+  &__item {
+  }
+
+  // .master-class__image
+  &__image {
+    margin-bottom: 42px;
+  }
+
+  // .master-class__title
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  // .master-class__desc
+  &__desc {
+    margin-bottom: 20px;
+  }
+
+  // .master-class__author
+  &__author {
+    a {
+      color: $gold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

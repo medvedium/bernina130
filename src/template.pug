@@ -1,0 +1,400 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Bernina 130 years
+    body
+        .mobile-header.black-bg
+            .burger
+                span
+            .mobile-header__logo
+                img.mobile-header__logo-item(src=require('./images/bernina-logo.svg') alt='Bernina logo')
+                img.mobile-header__logo-item(src=require('./images/bernina-130.svg') alt='Logo of 130 years')
+        nav.nav.black-bg
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href="#hero") главная
+                li.nav__item
+                    a.nav__link(href="#dressCode") формат
+                li.nav__item
+                    a.nav__link(href="#masterClass") мастер-классы
+                li.nav__item
+                    a.nav__link(href="#location") место проведения
+                li.nav__item
+                    a.nav__link(href="#footer") контакты
+                li.nav__item
+                    a.nav__link(href="#price") купить билет
+            .close-burger
+
+        main
+
+            section.hero.black-bg#hero
+                h2.section__title.hero__title
+                    .hero__date 5 августа 2023
+                    .hero__city москва
+                .hero__logo.hero-logo
+                    img.hero-logo__item(src=require('./images/bernina-logo.svg') alt='Bernina logo')
+                    img.hero-logo__item(src=require('./images/bernina-130.svg') alt='Logo of 130 years')
+                .hero__timer.hero-timer
+                    .hero-timer__item
+                        .hero-timer__value 28
+                        .hero-timer__title дней
+                    .hero-timer__item
+                        .hero-timer__value 18
+                        .hero-timer__title часов
+                    .hero-timer__item
+                        .hero-timer__value 05
+                        .hero-timer__title минут
+                    .hero-timer__item
+                        .hero-timer__value 36
+                        .hero-timer__title секунд
+                button.button.button--white зарегистрироваться и купить билет
+
+            section.features
+                .intro
+                    p В 1893 появилась первая в мире швейная машина для обработки края мережкой, которая стала началом производства машин, которые впоследствии получили название
+                        span.text--red &nbsp;BERNINA
+                        | .
+                        br
+                        | Самовыражение посредством шитья — это искусство.
+                        br
+                        | 130 лет BERNINA восхищается Вами и Вашим мастерством.
+                    p Мы приглашаем вас отметить вместе с нами день рождения BERNINA!
+                        br
+                        | Вас ждут уникальные мастер-классы, единомышленники и любители BERNINA,
+                        br
+                        | встреча с любимыми амбассадорами,
+                        br
+                        | подарки, фуршет и вечеринка!
+                .features__wrap
+                    .features__item
+                        .features__icon
+                            img(src=require('./images/icons/icon-1.svg') alt='уникальные мастер-классы')
+                        .features__title уникальные мастер-классы
+                        hr
+                        .features__desc Мастер-классы по вышивке, по стежке на лонгарм BERNINA&nbsp;Q, по&nbsp;стежке рюкзачков.
+                    .features__item
+                        .features__icon
+                            img(src=require('./images/icons/icon-2.svg') alt='Круглый стол')
+                        .features__title Круглый стол
+                        hr
+                        .features__desc Круглый стол с Викторией Ракусой и амбассадорами BERNINA.
+                    .features__item
+                        .features__icon
+                            img(src=require('./images/icons/icon-3.svg') alt='Тест драйв')
+                        .features__title Тест драйв
+                        hr
+                        .features__desc Тест драйв машин&nbsp;BERNINA с опытными консультантами.
+
+            section.marquee__wrap.black-bg
+                marquee.marquee
+                    span вдохновляйся!
+                    span изучай новое!
+                    span пробуй!
+                    span вдохновляйся!
+                    span изучай новое!
+                    span пробуй!
+                    span вдохновляйся!
+                    span изучай новое!
+                    span пробуй!
+                    span вдохновляйся!
+                    span изучай новое!
+                    span пробуй!
+
+            section.decoration
+
+            section.timetable
+                h2.section__title.timetable__title присоединяйтесь!
+                .timetable__inner
+                    .timetable__item
+                        .timetable__time С 14:30
+                        .timetable__content Сбор гостей на мастер классы
+                    .timetable__item
+                        .timetable__time с 16:30
+                        .timetable__content Сбор гостей на круглый стол и вечеринку
+                    .timetable__item
+                        .timetable__time 15:00 – 17:00
+                        .timetable__content Мастер класс от Натальи Брюхановой «Возможности Bernina Q»
+                            br
+                            | Мастер класс от Валентины Букеевой 
+                            br
+                            | Мастер класс от Людмилы Никифоровой «Машинная вышивка ….»
+                    .timetable__item
+                        .timetable__time 17:30 – 19:00
+                        .timetable__content Круглый стол с Викторией Ракусой и амбассадорами
+                    .timetable__item
+                        .timetable__time 16:30 – 18:00
+                        .timetable__content - Консультации и мастер классы по технике BERNINA.
+                            br
+                            | - Индивидуальные МК в свободном режиме.
+                    .timetable__item
+                        .timetable__time 19:00 – 22:00
+                        .timetable__content Вечеринка
+                            br
+                            | - Развлекательная программа
+                            br
+                            | - Розыгрыш подарков
+                            br
+                            | - Танцы
+                button.button.button--red купить билет
+
+            section.ambassadors.black-bg
+                h2.section__title амбассадоры
+                .ambassadors__inner
+                    .ambassadors__item.ambassador
+                        .ambassador__image
+                            img(src=require('./images/ambassador-1.png') alt='Виктория Ракуса')
+                        .ambassador__name Виктория Ракуса
+                        .ambassador__desc Основательница бренда готовых выкроек. Благодаря ее выкройкам и подробным мастер-классам тысячи девушек сшили свои первые наряды, а многие перешли к созданию более сложных изделий.
+                    .ambassadors__item.ambassador
+                        .ambassador__image
+                            img(src=require('./images/ambassador-2.png') alt='Валентина Букеева')
+                        .ambassador__name Валентина Букеева
+                        .ambassador__desc Основательница онлайн-школы современного шитья и квилтинга, мастер пэчворка и свободной стежки. Ее бренд Fleur D’Or Quilt, занимается разработкой моделей, созданием готовых работ и продвижением искусства художественной стежки.
+                    .ambassadors__item.ambassador
+                        .ambassador__image
+                            img(src=require('./images/ambassador-3.png') alt='Наталия Брюханова')
+                        .ambassador__name Наталия Брюханова
+                        .ambassador__desc Профессиональный квилтер, преподаватель школы стежки в Екатеринбурге и автор мастер-классов по применению художественной стежки в лоскутных изделиях.
+                    .ambassadors__item.ambassador
+                        .ambassador__image
+                            img(src=require('./images/ambassador-4.png') alt='Людмила Никифорова')
+                        .ambassador__name Людмила Никифорова
+                        .ambassador__desc Преподаватель учебного центра, специалист по вышивке и работе в программном обеспечении BERNINA. Лицо канала BERNINA RUSSIA. Обучает не только владельцев BERNINA, но и продавцов швейных магазинов.
+
+            section.master-class#masterClass
+                .section__title Мастер Классы
+                .master-class__inner
+                    .master-class__item
+                        .master-class__image
+                            img(src=(require('./images/master-class-1.jpg')) alt='Возможности Bernina Q')
+                        .master-class__title «Возможности Bernina Q»
+                        .master-class__desc Описание …
+                        .master-class__author преподаватель:
+                            br
+                            a(href="#") Наталья Брюханова
+                    .master-class__item
+                        .master-class__image
+                            img(src=(require('./images/master-class-2.jpg')) alt='3D эффект в стёжке')
+                        .master-class__title «3D эффект в стёжке»
+                        .master-class__desc Описание …
+                        .master-class__author преподаватель:
+                            br
+                            a(href="#") Валентина Букеева
+                    .master-class__item
+                        .master-class__image
+                            img(src=(require('./images/master-class-3.jpg')) alt='Азы машинной вышивки')
+                        .master-class__title «Азы машинной вышивки»
+                        .master-class__desc Описание …
+                        .master-class__author преподаватель:
+                            br
+                            a(href="#") Людмила Никифорова
+
+            section.promo.black-bg
+                h2.section__title ПОКОРЯЙ ВЕРШИНЫ С bernina
+                p Уже на протяжении 130 лет BERNINA посвящает себя разработке швейных и вышивальных машин и машин для выполнения квилтов для креативных людей.
+                    br
+                    | Станьте частью семьи BERNINA!
+                p.text--bold Вместе с нами 5 августа по адресу: Москва,
+                    br
+                    | Берсенеская набережная, д. 6, стр. 3. Event Hall на Красном Октябре.
+                button.button.button--gold купить билет
+
+            section.dresscode#dressCode
+                h2.section__title After 5 o’clock
+                .section__subtitle рекомендуемый дресс-код
+                .dresscode__desc Люди — главная составляющая любого мероприятия. Чтобы проникнуться настроением праздника BERNINA, мы предлагаем вам использовать цвета бренда - черный, красный и белый.
+                .dresscode__inner
+                    .dresscode__item
+                        img(src=require('./images/dresscode-1.jpg') alt="Девушка в светлом костюме")
+                    .dresscode__item
+                        img(src=require('./images/dresscode-2.jpg') alt="Девушка в красном костюме")
+                    .dresscode__item
+                        img(src=require('./images/dresscode-3.jpg') alt="Девушка в чёрном костюме")
+                    .dresscode__item
+                        img(src=require('./images/dresscode-cover.svg') alt="Рисунок девушки в чёрном платье")
+                        button.button.button--red купить билет
+                .dresscode__desc Для девушек - Коктейльное платье, топ и юбка, костюм с юбкой или брюками. Для мужчин - Костюм, не обязательно деловой. Уместны джинсы, вельветовые брюки, клубные пиджаки и трикотаж. Галстук необязателен
+
+            section.presents
+                h2.section__title будем дарить Подарки
+                .presents__inner
+                    a(href="#").presents__item.presents-item
+                        .presents-item__image
+                            img(src=require('./images/presents/present-1.png') alt="Парогенератор с утюгом LELIT PS321 условия получения подарка")
+                        .presents-item__title Парогенератор с&nbsp;утюгом LELIT&nbsp;PS321
+                    a(href="#").presents__item.presents-item
+                        .presents-item__image
+                            img(src=require('./images/presents/present-2.png') alt="Набор ниток Madeira")
+                        .presents-item__title Набор ниток Madeira
+                    a(href="#").presents__item.presents-item
+                        .presents-item__image
+                            img(src=require('./images/presents/present-3.png') alt="Bernina 475 Kaffe Edition")
+                        .presents-item__title Bernina 475 Kaffe Edition
+                    a(href="#").presents__item.presents-item
+                        .presents-item__image
+                            img(src=require('./images/presents/present-4.png') alt="Jiffy Steamer ESTEAM")
+                        .presents-item__title Jiffy Steamer ESTEAM
+                    a(href="#").presents__item.presents-item
+                        .presents-item__image
+                            img(src=require('./images/presents/present-5.png') alt="выкройки от VikiSews")
+                        .presents-item__title выкройки от VikiSews
+
+            section.partners
+                h2.section__title наши партнеры
+                .partners__inner
+                    .partners__item
+                        img(src=require('./images/partners/lelit.png') alt="lelit")
+                    .partners__item
+                        img(src=require('./images/partners/jiffy-steamer.png') alt="jiffy steamer")
+                    .partners__item
+                        img(src=require('./images/partners/sew-world.png') alt="Мир Шитья")
+                    .partners__item
+                        img(src=require('./images/partners/madeira.png') alt="madeira")
+                    .partners__item
+                        img(src=require('./images/partners/schmetz.png') alt="schmetz")
+
+            section.location.black-bg#location
+                h2.section__title Место проведения
+                .location__desc Мы ждем вас в атмосферном арт-пространстве, площадью 450 м на берегу Берсеневской набережной Москва-реки. Потрясающий вид из панорамных окон на храм Христа спасителя, и проплывающие мимо теплоходы, делают его незабываемым местом для нашей творческой встречи.
+                .location__inner
+                    .location__image-block
+                        img(src=require('./images/frontman.jpg'))
+                        button.button.button--red купить билет
+                    .location__text-block
+                        .location__text-item
+                            .location__text-icon
+                                img(src=require('./images/icons/microphone.svg'))
+                            .location__text-content
+                                .text--bold Event ведущий
+                                .text Андрей Буриков
+                        .location__text-item
+                            .location__text-icon
+                                img(src=require('./images/icons/pin-lined.svg'))
+                            .location__text-content
+                                .text--bold локация
+                                .text лофт Event Hall
+                                | на Красном Октябре
+
+
+            section.price#price
+                h2.section__title стоимость участия
+                .price__inner
+                    .price__item.price-item
+                        .price-item__price 7 000 руб.
+                        .price-item__mk.text--bold МК Валентины Букеевой
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        button.button.button--red(data-target="ticket1") купить билет
+                    .price__item.price-item
+                        .price-item__price 7 000 руб.
+                        .price-item__mk.text--bold МК Валентины Букеевой
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        button.button.button--red(data-target="ticket2") купить билет
+                    .price__item.price-item
+                        .price-item__price 7 000 руб.
+                        .price-item__mk.text--bold МК Валентины Букеевой
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        button.button.button--red(data-target="ticket3") купить билет
+                    .price__item.price-item
+                        .price-item__price 7 000 руб.
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        button.button.button--red(data-target="ticket4") купить билет
+            footer.footer.black-bg#footer
+                .section__title До встречи на вечеринке “Bernina 130 лет”
+                    br
+                    | 05 августа в Москве!
+                .footer__address
+                    img(src=require('./images/icons/pin.svg'))
+                    | Берсенеская набережная, д. 6, стр. 3. Event Hall
+                    br
+                    | на Красном Октябре
+                button.button.button--gold купить в один клик
+                .footer.footer__contact По всем вопросам:&nbsp;
+                    a(href="mailto:sale@bernina.store") sale@bernina.store
+        .backdrop
+        .modal.modal-payment
+            .modal__inner
+                .modal-close
+                .section__title купить билет
+                .price__inner
+                    label.price__item.price-item
+                        .price-item__price 7 000 руб.
+                        .price-item__mk.text--bold МК Валентины Букеевой
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        input(type="radio" id="ticket1" name="ticket" value="ticket1" checked)
+                        button.button.button--gold выбрать
+                    label.price__item.price-item
+                        .price-item__price 7 000 руб.
+                        .price-item__mk.text--bold МК Валентины Букеевой
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        input(type="radio" id="ticket2" name="ticket" value="ticket1")
+                        button.button.button--gold(disabled) выбрать
+                    label.price__item.price-item
+                        .price-item__price 7 000 руб.
+                        .price-item__mk.text--bold МК Валентины Букеевой
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        input(type="radio" id="ticket3" name="ticket" value="ticket1")
+                        button.button.button--gold выбрать
+                    label.price__item.price-item
+                        .price-item__price 7 000 руб.
+                        span +
+                        span Круглый стол
+                        span +
+                        span Вечеринка
+                        .price-item__places.text--red.text--italic мест: 8
+                        input(type="radio" id="ticket4" name="ticket" value="ticket1")
+                        button.button.button--gold выбрать
+                form
+                    .form-row
+                        input(type="text" placeholder="ФИО")
+                        input(type="tel" placeholder="Телефон")
+                        input(type="email" placeholder="E-mail")
+                    .checkbox-wrap
+                        label
+                            input(type="checkbox")
+                            span &nbsp;Я согласен на&nbsp;
+                                a(href="https://bernina.store/privacy/" target="_blank").text--gold обработку персональных данных
+                    button.button.button--red(type="submit") Приобрести
+                footer.modal__footer.text--center Если у вас возникнут вопросы,
+                    br
+                    | можете написать нам на почту&nbsp;
+                    a(href="mailto:sale@bernina.store") sale@bernina.store
+
+        .modal.modal-success
+            .modal__inner
+                .modal-close
+                .modal__content.text--center Ваша заявка на приобретение билета получена!
+                    .text--red Вам на почту придет ссылка на оплату.
+                    | Оплату требуется внести в течение суток
+                    | с&nbsp;момента получения.
+                button.button.button--red ОК

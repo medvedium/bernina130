@@ -1,0 +1,101 @@
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1282px;
+	max-height: fit-content;
+	border-radius: 15px;
+	display: none;
+	z-index: 10;
+	color: #000000;
+
+	.modal__inner {
+		padding: 30px;
+	}
+
+	&.active {
+		display: block;
+	}
+
+	&__inner {
+		position: relative;
+	}
+
+	.modal-close {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		width: 25px;
+		height: 25px;
+		background-image: url('images/icons/close.svg');
+		background-size: contain;
+		cursor: pointer;
+		transition: all 0.2s linear;
+
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+
+	&__footer {
+		margin-top: 40px;
+
+		a {
+			color: #000;
+			text-decoration: underline;
+		}
+	}
+
+	&.modal-payment {
+		background-color: #ffffff;
+
+		label.price-item {
+			border: 1px solid transparent;
+
+			&:has(input:checked) {
+				border: 1px solid red;
+			}
+
+			.button {
+				border: 1px solid transparent;
+			}
+
+			input {
+				visibility: hidden;
+
+				&:checked + .button {
+					//border: 1px solid red;
+					background-color: red;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&.modal-success {
+		max-width: 655px;
+		background-color: #ffffff;
+
+		.modal__inner {
+			padding: 90px 50px;
+		}
+
+		.button {
+			width: 100%;
+			max-width: 320px;
+			margin-top: 40px;
+		}
+	}
+}
+
+.backdrop {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(#000, 0.6);
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}

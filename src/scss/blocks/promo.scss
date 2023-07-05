@@ -1,0 +1,23 @@
+.promo {
+  padding-top: 44px;
+  padding-bottom: 55px;
+  background-image: url('images/icons/mountain.svg');
+  background-repeat: no-repeat;
+  background-position: -200px 100%;
+
+  .section__title {
+    margin-bottom: 25px;
+  }
+
+  p {
+    text-align: center;
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+
+  p + p {
+    margin-top: 20px;
+  }
+}
