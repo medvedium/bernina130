@@ -1,13 +1,17 @@
 {
-  "name": "starterpack",
+  "name": "bernina130",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "url": "https://github.com/medvedium/bernina130.git"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "serve": "webpack serve --open --mode development",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +23,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "filemanager-webpack-plugin": "^8.0.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "image-minimizer-webpack-plugin": "^3.8.2",
     "imagemin": "^8.0.1",
