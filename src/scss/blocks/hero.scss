@@ -1,73 +1,92 @@
 .hero {
-  background-image: url('images/hero-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 110px;
-  padding-bottom: 47px;
-  background-attachment: fixed;
+	background-image: url('images/hero-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 110px;
+	padding-bottom: 47px;
+	background-attachment: fixed;
 
-  // .hero__title
-  &__title {
-  }
+	@media (max-width: 999px) {
+		padding-top: 150px;
+	}
 
-  // .hero__date
-  &__date {
-    font-size: 54px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 300;
-  }
+	// .hero__title
+	&__title {
+	}
 
-  // .hero__city
-  &__city {
-    text-align: center;
-    font-size: 48px;
-    text-transform: uppercase;
-    font-weight: 300;
-  }
+	// .hero__date
+	&__date {
+		font-size: 54px;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 300;
+		@media (max-width: 999px) {
+			font-size: 37px;
+		}
+	}
 
-  // .hero__logo
-  &__logo {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
+	// .hero__city
+	&__city {
+		text-align: center;
+		font-size: 48px;
+		text-transform: uppercase;
+		font-weight: 300;
+		@media (max-width: 999px) {
+			font-size: 37px;
+		}
+	}
 
-  // .hero__timer
-  &__timer {
-    display: flex;
-    justify-content: center;
-    gap: 79px;
-    margin-bottom: 63px;
-  }
+	// .hero__logo
+	&__logo {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
 
+	// .hero__timer
+	&__timer {
+		display: flex;
+		justify-content: center;
+		gap: clamp(24px, 10%, 79px);
+		margin-bottom: 63px;
+	}
 }
 
 .hero-logo {
-  // .hero-logo__item
-  &__item {
-    &:first-of-type {
-      transform: translateY(-18px);
-    }
-  }
+	// .hero-logo__item
+	&__item {
+		&:first-of-type {
+			transform: translateY(-18px);
+		}
+	}
+
+	@media (max-width: 999px) {
+		display: none;
+	}
 }
 
 .hero-timer {
-  // .hero-timer__item
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	// .hero-timer__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-  // .hero-timer__value
-  &__value {
-    font-size: 66px;
-  }
+	// .hero-timer__value
+	&__value {
+		font-size: 66px;
+		@media (max-width: 999px) {
+			font-size: 44px;
+		}
+	}
 
-  // .hero-timer__title
-  &__title {
-    font-size: 12px;
-  }
+	// .hero-timer__title
+	&__title {
+		font-size: 12px;
+		@media (max-width: 999px) {
+			font-size: 8px;
+		}
+	}
 }

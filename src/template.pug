@@ -39,18 +39,21 @@ html(lang="ru")
                     img.hero-logo__item(src=require('./images/bernina-130.svg') alt='Logo of 130 years')
                 .hero__timer.hero-timer
                     .hero-timer__item
-                        .hero-timer__value 28
+                        .hero-timer__value.hero-timer__days 28
                         .hero-timer__title дней
                     .hero-timer__item
-                        .hero-timer__value 18
+                        .hero-timer__value.hero-timer__hours 18
                         .hero-timer__title часов
                     .hero-timer__item
-                        .hero-timer__value 05
+                        .hero-timer__value.hero-timer__minutes 05
                         .hero-timer__title минут
                     .hero-timer__item
-                        .hero-timer__value 36
+                        .hero-timer__value.hero-timer__seconds 36
                         .hero-timer__title секунд
-                button.button.button--white зарегистрироваться и купить билет
+                button.button.button--white
+                    span.desktop-value зарегистрироваться и купить билет
+                    span.mobile-value купить билет
+
 
             section.features
                 .intro
@@ -88,20 +91,40 @@ html(lang="ru")
                         hr
                         .features__desc Тест драйв машин&nbsp;BERNINA с опытными консультантами.
 
-            section.marquee__wrap.black-bg
-                marquee.marquee
-                    span вдохновляйся!
-                    span изучай новое!
-                    span пробуй!
-                    span вдохновляйся!
-                    span изучай новое!
-                    span пробуй!
-                    span вдохновляйся!
-                    span изучай новое!
-                    span пробуй!
-                    span вдохновляйся!
-                    span изучай новое!
-                    span пробуй!
+            //section.marquee__wrap.black-bg.swiper
+            //    div.marquee.swiper-wrapper
+            //        span.swiper-slide вдохновляйся!
+            //        span.swiper-slide изучай новое!
+            //        span.swiper-slide пробуй!
+            //        span.swiper-slide вдохновляйся!
+            //        span.swiper-slide изучай новое!
+            //        span.swiper-slide пробуй!
+            //        span.swiper-slide вдохновляйся!
+            //        span.swiper-slide изучай новое!
+            //        span.swiper-slide пробуй!
+            //        span.swiper-slide вдохновляйся!
+            //        span.swiper-slide изучай новое!
+            //        //span.swiper-slide пробуй!
+
+            //<section class="splide" aria-label="Splide Basic HTML Example">
+            //<div class="splide__track">
+            //<ul class="splide__list">
+            //<li class="splide__slide">Slide 01</li>
+            //<li class="splide__slide">Slide 02</li>
+            //<li class="splide__slide">Slide 03</li>
+            //</ul>
+            //</div>
+            //</section>
+
+            section.splide.marquee__wrap.black-bg
+                .splide__track.marquee
+                    ul.splide__list
+                        li.splide__slide вдохновляйся!
+                        li.splide__slide изучай новое!
+                        li.splide__slide пробуй!
+                        li.splide__slide вдохновляйся!
+                        li.splide__slide изучай новое!
+                        li.splide__slide пробуй!
 
             section.decoration
 
@@ -171,23 +194,25 @@ html(lang="ru")
                         .master-class__image
                             img(src=(require('./images/master-class-1.jpg')) alt='Возможности Bernina Q')
                         .master-class__title «Возможности Bernina Q»
-                        .master-class__desc Описание …
+                        .master-class__desc
+                            | Практический мастер-класс
+                            | по работе на лонгарме
                         .master-class__author преподаватель:
                             br
                             a(href="#") Наталья Брюханова
                     .master-class__item
                         .master-class__image
                             img(src=(require('./images/master-class-2.jpg')) alt='3D эффект в стёжке')
-                        .master-class__title «3D эффект в стёжке»
-                        .master-class__desc Описание …
+                        .master-class__title «”Сахарный” эффект в сте‌жке‌»
+                        .master-class__desc Принципы создания объёмного рисунка на ткани
                         .master-class__author преподаватель:
                             br
                             a(href="#") Валентина Букеева
                     .master-class__item
                         .master-class__image
                             img(src=(require('./images/master-class-3.jpg')) alt='Азы машинной вышивки')
-                        .master-class__title «Азы машинной вышивки»
-                        .master-class__desc Описание …
+                        .master-class__title «Секреты машинной вышивки‌»
+                        .master-class__desc Вышивка на шопере с помощью рукавной платформы
                         .master-class__author преподаватель:
                             br
                             a(href="#") Людмила Никифорова
@@ -199,7 +224,7 @@ html(lang="ru")
                     | Станьте частью семьи BERNINA!
                 p.text--bold Вместе с нами 5 августа по адресу: Москва,
                     br
-                    | Берсенеская набережная, д. 6, стр. 3. Event Hall на Красном Октябре.
+                    | Берсеневская набережная, д. 6, стр. 3. Event Hall на Красном Октябре.
                 button.button.button--gold купить билет
 
             section.dresscode#dressCode
@@ -323,9 +348,10 @@ html(lang="ru")
                     | 05 августа в Москве!
                 .footer__address
                     img(src=require('./images/icons/pin.svg'))
-                    | Берсенеская набережная, д. 6, стр. 3. Event Hall
-                    br
-                    | на Красном Октябре
+                    span Берсеневская
+                    span набережная, д. 6,
+                    span стр. 3. Event Hall
+                    span на Красном Октябре
                 button.button.button--gold купить в один клик
                 .footer.footer__contact По всем вопросам:&nbsp;
                     a(href="mailto:sale@bernina.store") sale@bernina.store

@@ -28,7 +28,7 @@
 	// .nav__list
 	&__list {
 		display: flex;
-		gap: 46px;
+		gap: 40px;
 
 		@media (max-width: 999px) {
 			flex-direction: column;

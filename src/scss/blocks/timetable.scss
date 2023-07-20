@@ -1,35 +1,47 @@
 .timetable {
-  padding-top: 95px;
-  padding-bottom: 120px;
-  // .timetable__title
-  &__title {
-  }
+	padding-top: 95px;
+	padding-bottom: 120px;
 
-  // .timetable__inner
-  &__inner {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	@media (max-width: 999px) {
+		padding-top: 35px;
+		padding-bottom: 70px;
+	}
 
-  // .timetable__item
-  &__item {
-    margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	// .timetable__title
+	&__title {
+	}
 
-  // .timetable__time
-  &__time {
-    color: $gold;
-    margin-bottom: 15px;
-    font-family: "Frutiger Neue LT W1G", sans-serif;
-  }
+	// .timetable__inner
+	&__inner {
+		margin-top: 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-  // .timetable__content
-  &__content {
-    text-align: center;
-  }
+	// .timetable__item
+	&__item {
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media (max-width: 999px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	// .timetable__time
+	&__time {
+		color: $gold;
+		margin-bottom: 15px;
+		font-family: 'Frutiger Neue LT W1G', sans-serif;
+		@media (max-width: 999px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	// .timetable__content
+	&__content {
+		text-align: center;
+	}
 }

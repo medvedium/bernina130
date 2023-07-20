@@ -6,6 +6,7 @@ const burgerClose = document.querySelector('.nav .close-burger')
 const closeBurger = () => {
 	burgerMenu.classList.remove('active')
 	backdrop.classList.remove('active')
+	document.body.style.overflow = 'auto'
 }
 
 burgerButton.addEventListener('click', () => {

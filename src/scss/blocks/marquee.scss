@@ -1,15 +1,25 @@
 .marquee {
-  display: flex;
-  //grid-template-columns:  );
-  column-gap: 46px;
+	//display: flex;
+	//grid-template-columns:  );
+	//column-gap: 46px;
+	//animation: animate 30s linear infinite;
 
-  // .marquee__wrap
-  &__wrap {
-    padding: 16px 0 10px;
-  }
+	// .marquee__wrap
+	&__wrap {
+		padding: 12px 0 10px;
+	}
 
-  span {
-    font-size: 15px;
-    opacity: .5;
-  }
+	li {
+		font-size: 15px;
+		opacity: 0.5;
+		white-space: nowrap;
+		//display: block;
+		text-align: center;
+		padding: 0 15px;
+	}
+}
+
+.swiper-wrapper {
+	-webkit-transition-timing-function: linear !important;
+	transition-timing-function: linear !important;
 }

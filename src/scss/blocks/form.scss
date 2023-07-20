@@ -7,6 +7,11 @@ form {
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 50px;
 
+		@media (max-width: 999px) {
+			grid-template-columns: 1fr;
+			row-gap: 15px;
+		}
+
 		input {
 			background-color: #f5f5f5;
 			padding: 17px 20px;

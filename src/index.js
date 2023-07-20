@@ -7,6 +7,9 @@ import './main.scss'
 
 import './js/modal.js'
 import './js/burger.js'
+import './js/timer.js'
+import './js/phoneMask'
+import './js/marquee.js'
 
 // function component(text) {
 // 	const element = document.createElement('h1');

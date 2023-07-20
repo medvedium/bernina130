@@ -33,6 +33,11 @@ footer,
 		.black-bg & {
 			color: #ffffff;
 		}
+
+		@media (max-width: 999px) {
+			font-size: 24px;
+			font-weight: 300;
+		}
 	}
 
 	// .section__subtitle
@@ -111,4 +116,20 @@ a {
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+.desktop-value {
+	@media (max-width: 999px) {
+		display: none;
+	}
+}
+
+.mobile-value {
+	@media (min-width: 1000px) {
+		display: none;
+	}
+}
+
+.disabled-link {
+	pointer-events: none;
 }

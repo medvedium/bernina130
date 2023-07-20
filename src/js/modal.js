@@ -12,6 +12,7 @@ const closeModal = () => {
 	if (backdrop.classList.contains('active')) {
 		backdrop.classList.remove('active')
 	}
+	document.body.style.overflow = 'auto'
 }
 
 const showModalSuccess = () => {
@@ -43,6 +44,7 @@ backdrop.addEventListener('click', () => {
 	if (burgerMenu.classList.contains('active')) {
 		burgerMenu.classList.remove('active')
 	}
+	document.body.style.overflow = 'auto'
 })
 
 buttons.forEach((button) => {
@@ -50,6 +52,7 @@ buttons.forEach((button) => {
 		button.addEventListener('click', () => {
 			modal.classList.add('active')
 			backdrop.classList.add('active')
+			document.body.style.overflow = 'hidden'
 			if (button.dataset.target) {
 				modal.querySelector(`[id="${button.dataset.target}"]`).click()
 				modal
@@ -65,10 +68,7 @@ buttons.forEach((button) => {
 				}
 			})
 
-			modal.querySelector('.modal-close').addEventListener('click', () => {
-				modal.classList.remove('active')
-				backdrop.classList.remove('active')
-			})
+			modal.querySelector('.modal-close').addEventListener('click', closeModal)
 		})
 	} else {
 		if (button.closest('.price-item')) {
@@ -92,6 +92,7 @@ if (document.querySelectorAll('input[type="radio"]')) {
 		item.addEventListener('change', () => {
 			if (item.checked) {
 				item.closest('.price-item').querySelector('.button').textContent = 'Выбрано'
+				item.closest('.price-item').querySelector('.button').click()
 			} else {
 				item.closest('.price-item').querySelector('.button').textContent = 'Выбрать'
 			}

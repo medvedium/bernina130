@@ -1,23 +1,39 @@
 .promo {
-  padding-top: 44px;
-  padding-bottom: 55px;
-  background-image: url('images/icons/mountain.svg');
-  background-repeat: no-repeat;
-  background-position: -200px 100%;
+	padding-top: 44px;
+	padding-bottom: 55px;
+	background-image: url('images/icons/mountain.svg');
+	background-repeat: no-repeat;
+	background-position: -200px 100%;
 
-  .section__title {
-    margin-bottom: 25px;
-  }
+	@media (max-width: 767px) {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-image: none;
+	}
+	@media (max-width: 565px) {
+		.section__title {
+			margin-bottom: 25px;
+			text-align: left;
+		}
+	}
 
-  p {
-    text-align: center;
+	p {
+		text-align: center;
 
-    &:last-of-type {
-      margin-bottom: 20px;
-    }
-  }
+		@media (max-width: 767px) {
+			text-align: unset;
+		}
 
-  p + p {
-    margin-top: 20px;
-  }
+		&:last-of-type {
+			margin-bottom: 20px;
+		}
+	}
+
+	p + p {
+		margin-top: 20px;
+	}
+
+	.button {
+		margin-top: 30px;
+	}
 }

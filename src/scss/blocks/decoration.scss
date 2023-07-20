@@ -1,5 +1,9 @@
 .decoration {
-  height: 337px;
-  background-image: url('images/decoration-bg.jpg');
-  background-size: cover;
+	height: 337px;
+	background-image: url('images/decoration-bg.jpg');
+	background-size: cover;
+
+	@media (max-width: 999px) {
+		height: 171px;
+	}
 }
